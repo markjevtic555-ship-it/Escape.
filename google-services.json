@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1094195422328",
+    "project_id": "escape-392eb",
+    "storage_bucket": "escape-392eb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094195422328:android:d120f0a963cf9cc90c798d",
+        "android_client_info": {
+          "package_name": "com.escape.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaMYmOtVu1lbzY45kfANIytKj5tLLWZqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
