@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- NEOPHODNE usluge za nadgledanje -->
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- Dozvola za notifikacije -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- Rad u pozadini (opet dozvola) -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <!-- DND stanje (opet dozvola) (treba za fokus sesije) -->
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+
+    <!-- Ispitivanje svih pokretnih aplikacija -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".EscapeApplication"
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Escape">
+
+        <!-- Glavni ekran -->
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Escape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- "Ekran zabrane", blocking activity -->
+        <activity
+            android:name=".ui.BlockingActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Escape.Blocking"
+            android:launchMode="singleTask"
+            android:excludeFromRecents="true"
+            android:taskAffinity=""
+            android:showOnLockScreen="true"
+            android:turnScreenOn="true" />
+
+        <!-- Za odabir aplikacija -->
+        <activity
+            android:name=".ui.AppSelectionActivity"
+            android:exported="false"
+            android:label="@string/select_apps_title"
+            android:theme="@style/Theme.Escape" />
+
+        <!-- Statistike -->
+        <activity
+            android:name=".ui.StatisticsActivity"
+            android:exported="false"
+            android:label="@string/statistics_title"
+            android:theme="@style/Theme.Escape" />
+
+        <!-- Podešavanja -->
+        <activity
+            android:name=".ui.SettingsActivity"
+            android:exported="false"
+            android:label="@string/settings_title"
+            android:theme="@style/Theme.Escape" />
+
+        <!-- Za korisnički nalog -->
+        <activity
+            android:name=".ui.AccountActivity"
+            android:exported="false"
+            android:label="Account"
+            android:theme="@style/Theme.Escape" />
+
+        <!-- Fokus tajmer / sesije -->
+        <activity
+            android:name=".ui.FocusSessionActivity"
+            android:exported="false"
+            android:label="@string/focus_sessions_title"
+            android:theme="@style/Theme.Escape"
+            android:screenOrientation="portrait" />
+
+        <!-- Sudoku  -->
+        <activity
+            android:name=".ui.SudokuGameActivity"
+            android:exported="false"
+            android:label="@string/sudoku_title"
+            android:theme="@style/Theme.Escape"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop" />
+
+        <!-- Wordle  -->
+        <activity
+            android:name=".ui.WordleGameActivity"
+            android:exported="false"
+            android:label="@string/wordle_title"
+            android:theme="@style/Theme.Escape"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop" />
+
+        <!-- Poveži 4 -->
+        <activity
+            android:name=".ui.ConnectFourGameActivity"
+            android:exported="false"
+            android:label="@string/connect_four_title"
+            android:theme="@style/Theme.Escape"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop" />
+
+        <!-- 2048  -->
+        <activity
+            android:name=".ui.Game2048Activity"
+            android:exported="false"
+            android:label="@string/game_2048_title"
+            android:theme="@style/Theme.Escape"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop" />
+
+        <!-- Login  -->
+        <activity
+            android:name=".ui.LoginActivity"
+            android:exported="false"
+            android:label="Sign In"
+            android:theme="@style/Theme.Escape" />
+
+        <!-- Sign Up  -->
+        <activity
+            android:name=".ui.SignUpActivity"
+            android:exported="false"
+            android:label="Create Account"
+            android:theme="@style/Theme.Escape" />
+
+        <!-- Buddy System  -->
+        <activity
+            android:name=".ui.BuddyActivity"
+            android:exported="false"
+            android:label="Buddy System"
+            android:theme="@style/Theme.Escape" />
+
+        <!-- App Detail  -->
+        <activity
+            android:name=".ui.AppDetailActivity"
+            android:exported="false"
+            android:label="App Details"
+            android:theme="@style/Theme.Escape" />
+
+        <!-- Background nadgledanje -->
+        <service
+            android:name=".service.AppMonitoringService"
+            android:exported="false"
+            android:enabled="true"
+            android:foregroundServiceType="dataSync" />
+
+        <!-- Fokus sesije -->
+        <service
+            android:name=".service.FocusSessionService"
+            android:exported="false"
+            android:enabled="true"
+            android:foregroundServiceType="dataSync" />
+
+    </application>
+
+</manifest>
