@@ -1,0 +1,399 @@
+<resources>
+    <string name="app_name">Escape</string>
+
+    <!-- Main Activity -->
+    <string name="select_apps_title">Select Apps to Restrict</string>
+    <string name="time_limits_title">Set Time Limits</string>
+    <string name="focus_sessions_title">Focus Sessions</string>
+    <string name="statistics_title">Statistics</string>
+    <string name="settings_title">Settings</string>
+
+    <!-- App Selection -->
+    <string name="no_apps_selected">No apps selected</string>
+    <string name="select_all">Select All</string>
+    <string name="deselect_all">Deselect All</string>
+    <string name="selected_count">%1$d apps selected</string>
+    <string name="kairos_balance_label">Kairos: %1$d</string>
+    <string name="set_limit_prompt">Tap to set limit</string>
+    <string name="set_limit_title">Set Time Limit</string>
+    <string name="set_limit_message">Daily usage limit</string>
+    <string name="set_limit_error">Please set a valid time limit</string>
+    <string name="limit_value">%1$d min/day</string>
+    <string name="limit_value_hours">%1$dh %2$dm/day</string>
+    <string name="search_apps">Search apps...</string>
+    <string name="select_apps_subtitle">Choose apps and set daily time limits</string>
+    <string name="apps_available">Available apps</string>
+    <string name="restricted_count">%1$d restricted</string>
+    <string name="hours_label">Hours</string>
+    <string name="minutes_label">Minutes</string>
+    <string name="daily_limit">Daily Limit</string>
+    <string name="remove_limit">Remove Limit</string>
+    <string name="done">Done</string>
+
+    <!-- Time Limits -->
+    <string name="minutes_per_day">minutes per day</string>
+    <string name="set_limit">Set Limit</string>
+    <string name="time_limit_set">Time limit set for %1$s: %2$d minutes</string>
+
+    <!-- Focus Sessions -->
+    <string name="start_focus_session">Start Focus Session</string>
+    <string name="stop_focus_session">Stop Focus Session</string>
+    <string name="session_active">Focus session active</string>
+    <string name="session_inactive">Focus session inactive</string>
+
+    <!-- Blocking Screen -->
+    <string name="app_blocked">App Blocked</string>
+    <string name="time_up_message">Your time limit for this app has been reached.</string>
+    <string name="take_break">Take a break and come back later!</string>
+    <string name="time_remaining">Time remaining: %1$s</string>
+
+    <!-- Motivational Quotes -->
+    <string name="quote_1">"The key to success is to focus our conscious mind on things we desire, not things we fear."</string>
+    <string name="quote_2">"Concentrate all your thoughts upon the work at hand. The sun's rays do not burn until brought to a focus."</string>
+    <string name="quote_3">"The successful warrior is the average man, with laser-like focus."</string>
+    <string name="quote_4">"Most people have no idea of the giant capacity we can immediately command when we focus all of our resources on mastering a single area of our lives."</string>
+
+    <!-- Statistics -->
+    <string name="daily_usage">Daily Usage</string>
+    <string name="weekly_usage">Weekly Usage</string>
+    <string name="total_time">Total Time: %1$s</string>
+    <string name="apps_used">Apps Used: %1$d</string>
+    <string name="most_used_app">Most Used App: %1$s</string>
+
+    <!-- Settings -->
+    <string name="enable_breaks">Enable Break System</string>
+    <string name="break_interval">Break Interval (minutes)</string>
+    <string name="break_duration">Break Duration (minutes)</string>
+    <string name="reset_daily">Reset Daily at Midnight</string>
+    <string name="notification_warning">Warning Threshold (%)</string>
+
+    <!-- Permissions -->
+    <string name="permission_required">Permission Required</string>
+    <string name="usage_stats_permission_message">Escape needs usage access permission to monitor app usage. Please grant this permission in Settings > Security > Usage access.</string>
+    <string name="overlay_permission_message">Escape needs overlay permission to show blocking screens. Please grant this permission.</string>
+    <string name="notification_permission_message">Escape needs notification permission to show time limit warnings and service status.</string>
+    <string name="go_to_settings">Go to Settings</string>
+
+    <!-- Notifications -->
+    <string name="time_limit_warning">Time Limit Warning</string>
+    <string name="time_limit_warning_message">You have used %1$d%% of your daily limit for %2$s. %3$d minutes remaining.</string>
+    <string name="break_time">Break Time!</string>
+    <string name="break_time_message">Time for a %1$d minute break. You\'ve earned it!</string>
+
+    <!-- Buttons -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="reset">Reset</string>
+    <string name="exit_app">Exit App</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- End Session Dialog -->
+    <string name="end_session_title">End Focus Session?</string>
+    <string name="end_session_message">Are you sure you want to end your focus session?</string>
+
+    <!-- Focus Session Notifications / Kairos -->
+    <string name="focus_session_channel_name">Focus Session</string>
+    <string name="focus_session_channel_description">Notifications for active focus sessions</string>
+    <string name="focus_session_notification_title">Focus session running</string>
+    <string name="focus_session_notification_text">Stay focused! Tap to view session.</string>
+    <string name="dnd_permission_message">To minimize distractions, allow Do Not Disturb access so we can silence notifications during focus sessions.</string>
+    <string name="kairos_earned_message">Great job! You earned 1 Kairos.</string>
+
+    <!-- Blocking Overlay -->
+    <string name="play_random_game">🎮  Play a Game (+10 min)</string>
+
+    <!-- Sudoku Game -->
+    <string name="play_sudoku">Play Sudoku (+10 min)</string>
+    <string name="sudoku_title">Solve to earn 10 min bonus!</string>
+    <string name="check_solution">Check Solution</string>
+    <string name="clear">Clear</string>
+    <string name="sudoku_correct">Sudoku solved! You earned 10 minutes of bonus time.</string>
+    <string name="sudoku_incorrect">Solution incorrect. Keep trying!</string>
+
+    <!-- Wordle Game -->
+    <string name="play_wordle">Play Wordle (+10 min)</string>
+    <string name="wordle_title">Guess the word for 10 min bonus!</string>
+    <string name="wordle_correct">Wordle solved! You earned 10 minutes of bonus time.</string>
+    <string name="wordle_game_over">Game over! The word was: %1$s</string>
+    <string name="wordle_not_enough_letters">Not enough letters</string>
+    <string name="wordle_invalid_word">Not in word list</string>
+    <string name="wordle_enter">ENTER</string>
+
+    <!-- Connect Four Game -->
+    <string name="play_connect_four">4 in a Row (+10 min)</string>
+    <string name="connect_four_title">4 in a Row</string>
+    <string name="connect_four_subtitle">Connect 4 to earn 10 min bonus!</string>
+    <string name="connect_four_your_turn">Your turn</string>
+    <string name="connect_four_computer_turn">Computer thinking…</string>
+    <string name="connect_four_you_win">You win!</string>
+    <string name="connect_four_computer_wins">Computer wins!</string>
+    <string name="connect_four_draw">It\'s a draw!</string>
+    <string name="connect_four_column_full">Column is full!</string>
+    <string name="connect_four_new_game">New Game</string>
+    <string name="connect_four_you">You</string>
+    <string name="connect_four_computer">Computer</string>
+    <string name="connect_four_bonus_awarded">You win! Earned 10 minutes of bonus time.</string>
+
+    <!-- Merge it! Game (formerly 2048) -->
+    <string name="play_2048">Merge it! (+10 min)</string>
+    <string name="game_2048_title">Merge it!</string>
+    <string name="game_2048_subtitle">Reach 256 to earn 10 min bonus!</string>
+    <string name="game_2048_score">Score: %1$d</string>
+    <string name="game_2048_win">You Win!</string>
+    <string name="game_2048_game_over">Game Over</string>
+    <string name="game_2048_new_game">New Game</string>
+    <string name="game_2048_instructions">Swipe to move tiles. Merge same values!</string>
+    <string name="game_2048_bonus_awarded">You reached 256! Earned 10 minutes of bonus time.</string>
+
+    <!-- Main Activity Additional Strings -->
+    <string name="tagline">Master your digital time</string>
+    <string name="service_active">Service: Active</string>
+    <string name="service_inactive">Service: Inactive</string>
+    <string name="monitoring_apps">Monitoring apps</string>
+    <string name="tap_to_enable">Tap to enable</string>
+    <string name="apps_tracked">Apps Tracked</string>
+    <string name="todays_usage">Today\'s Usage</string>
+    <string name="select_apps_description">Choose apps to monitor and set limits</string>
+    <string name="focus_session_description">Deep work mode with app blocking</string>
+    <string name="statistics_description">View detailed usage analytics</string>
+    <string name="buddy_system">Buddy System</string>
+    <string name="buddy_system_description">Connect with a friend for accountability</string>
+    <string name="connected">Connected</string>
+    <string name="quote_default">The key is not to prioritize what\'s on your schedule, but to schedule your priorities.</string>
+    <string name="quote_author_default">Stephen Covey</string>
+    <string name="app_version">v1.0</string>
+    <string name="monitoring_started">Escape monitoring started</string>
+    <string name="monitoring_stopped">Escape monitoring stopped</string>
+    <string name="usage_stats_permission_required">Usage stats permission required</string>
+    <string name="overlay_permission_required">Overlay permission required</string>
+    <string name="notification_permission_required">Notification permission required for app monitoring</string>
+    <string name="error_initializing_app">Error initializing app: %1$s</string>
+    <string name="error_checking_permissions">Error checking permissions: %1$s</string>
+    <string name="error_starting_service">Error starting service</string>
+    <string name="error_updating_ui">Error updating UI</string>
+
+    <!-- Quotes Array -->
+    <string name="quote_0_text">The key is not to prioritize what\'s on your schedule, but to schedule your priorities.</string>
+    <string name="quote_0_author">Stephen Covey</string>
+    <string name="quote_1_text">Almost everything will work again if you unplug it for a few minutes, including you.</string>
+    <string name="quote_1_author">Anne Lamott</string>
+    <string name="quote_2_text">Technology is a useful servant but a dangerous master.</string>
+    <string name="quote_2_author">Christian Lous Lange</string>
+    <string name="quote_3_text">The ability to simplify means to eliminate the unnecessary so that the necessary may speak.</string>
+    <string name="quote_3_author">Hans Hofmann</string>
+    <string name="quote_4_text">Disconnect to reconnect.</string>
+    <string name="quote_4_author">Unknown</string>
+    <string name="quote_5_text">Your focus determines your reality.</string>
+    <string name="quote_5_author">George Lucas</string>
+    <string name="quote_6_text">Time is what we want most, but what we use worst.</string>
+    <string name="quote_6_author">William Penn</string>
+    <string name="quote_7_text">The greatest weapon against stress is our ability to choose one thought over another.</string>
+    <string name="quote_7_author">William James</string>
+
+    <!-- Settings -->
+    <string name="break_system_settings">Break System Settings</string>
+    <string name="minutes">minutes</string>
+    <string name="warning_at_percent">Warning at %1$d%% of time limit</string>
+    <string name="log_out">Log out</string>
+    <string name="values_must_be_greater_than_zero">Values must be greater than 0</string>
+    <string name="settings_saved">Settings saved</string>
+    <string name="please_enter_valid_numbers">Please enter valid numbers</string>
+    <string name="language_settings">Language</string>
+    <string name="select_language">Select Language</string>
+    <string name="language_english">English</string>
+    <string name="language_serbian">Српски (Serbian)</string>
+    <string name="language_serbian_latin">Srpski (Serbian Latin)</string>
+
+    <!-- Account Activity -->
+    <string name="account_title">Account</string>
+    <string name="user">User</string>
+    <string name="email">Email</string>
+    <string name="no_email">No email</string>
+    <string name="buddy_code_label">Buddy code: %1$s</string>
+
+    <!-- Blocking Activity -->
+    <string name="buddy_system_penalty">Buddy system penalty</string>
+    <string name="until_daily_reset">Until daily reset</string>
+    <string name="purchase_5_minutes">⧖  Purchase another 5 minutes (1 Kairos)</string>
+
+    <!-- Buddy Activity -->
+    <string name="not_connected">Not Connected</string>
+    <string name="your_buddy_code">YOUR BUDDY CODE</string>
+    <string name="loading">LOADING...</string>
+    <string name="error">ERROR</string>
+    <string name="copy">Copy</string>
+    <string name="share_code_message">Share this code with a friend to connect</string>
+    <string name="connect_to_buddy">CONNECT TO A BUDDY</string>
+    <string name="connect_to_buddy_button">Connect to Buddy</string>
+    <string name="your_buddy">Your Buddy</string>
+    <string name="live">LIVE</string>
+    <string name="currently_using">CURRENTLY USING</string>
+    <string name="no_app_in_use">No app in use</string>
+    <string name="in_this_session">in this session</string>
+    <string name="restricted_apps">RESTRICTED APPS</string>
+    <string name="penalty_active">Penalty Active</string>
+    <string name="buddy_exceeded_limit">Your buddy exceeded the daily limit</string>
+    <string name="buddy_exceeded_one_limit">Your buddy exceeded one of their app limits!</string>
+    <string name="buddy_penalty_locked_app">Your buddy exceeded limits, so Escape locked %1$s for you.</string>
+    <string name="disconnect_buddy">Disconnect Buddy</string>
+    <string name="disconnect_buddy_message">Are you sure you want to disconnect from your buddy? Both of you will lose the connection.</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="disconnected_from_buddy">Disconnected from buddy</string>
+    <string name="how_it_works">💡 How It Works</string>
+    <string name="how_it_works_description">• Share your code with a friend\n• See what app your buddy is using in real-time\n• If your buddy exceeds any of their app limits, both get restrictions\n• Get notified when your buddy uses an app for over 1 hour\n• Stay accountable together!</string>
+    <string name="no_restricted_apps">No restricted apps to show yet</string>
+
+    <!-- Statistics Activity -->
+    <string name="todays_overview">Today\'s Overview</string>
+    <string name="digital_wellbeing">DIGITAL WELLBEING</string>
+    <string name="excellent_control">Excellent Control</string>
+    <string name="time_saved">Time Saved</string>
+    <string name="screen_time">📱 Screen Time</string>
+    <string name="over_limit">🚫 Over Limit</string>
+    <string name="app_breakdown">App Breakdown</string>
+    <string name="tap_for_details">Tap for details</string>
+    <string name="daily_summary">📊 Daily Summary</string>
+    <string name="total_usage">Total Usage</string>
+    <string name="apps_used_today">Apps Used Today</string>
+    <string name="date">Date</string>
+    <string name="statistics_update_realtime">Statistics update in real-time</string>
+
+    <!-- App Detail Activity -->
+    <string name="app_details">App Details</string>
+    <string name="app_name_label">App Name</string>
+    <string name="todays_usage_label">TODAY\'S USAGE</string>
+    <string name="min_limit">/ %1$d min limit</string>
+    <string name="delete_limit">Delete limit</string>
+    <string name="opens_today">📱 Opens Today</string>
+    <string name="times_opened">times opened</string>
+    <string name="avg_session">⏱️ Avg Session</string>
+    <string name="per_session">per session</string>
+    <string name="limits_exceeded">🚫 Limits Exceeded</string>
+    <string name="this_week">this week</string>
+    <string name="longest_session">🏆 Longest Session</string>
+    <string name="today">today</string>
+    <string name="within_limit">🔥 Within Limit</string>
+    <string name="days">days</string>
+    <string name="streak">streak</string>
+    <string name="peak_hour">⚡ Peak Hour</string>
+    <string name="most_active">most active</string>
+    <string name="hourly_usage">🕐 Hourly Usage</string>
+    <string name="usage_throughout_day">Usage throughout the day (24 hours)</string>
+    <string name="weekly_trend">📈 Weekly Trend</string>
+    <string name="personalized_insight">💡 Personalized Insight</string>
+    <string name="based_on_usage_patterns">Based on your usage patterns...</string>
+
+    <!-- Login Activity -->
+    <string name="welcome_back">Welcome Back</string>
+    <string name="sign_in_continue">Sign in to continue your journey</string>
+    <string name="email_label">EMAIL</string>
+    <string name="password_label">PASSWORD</string>
+    <string name="sign_in">Sign In</string>
+    <string name="dont_have_account">Don\'t have an account? </string>
+    <string name="sign_up">Sign Up</string>
+    <string name="continue_without_account">Continue without account</string>
+
+    <!-- Signup Activity -->
+    <string name="create_account">Create Account</string>
+    <string name="join_community">Join the Escape community</string>
+    <string name="confirm_password_label">CONFIRM PASSWORD</string>
+    <string name="create_account_button">Create Account</string>
+    <string name="already_have_account">Already have an account? </string>
+
+    <!-- Focus Session Activity -->
+    <string name="focus_mode">Focus Mode</string>
+    <string name="earn_kairos_focused">Earn Kairos by staying focused</string>
+    <string name="sessions">Sessions</string>
+    <string name="total_focus">Total Focus</string>
+    <string name="day_streak">Day Streak</string>
+    <string name="start">START</string>
+    <string name="stay_focused">Stay focused...</string>
+    <string name="tap_to_begin">Tap to begin your focus session</string>
+    <string name="todays_focus">Today\'s Focus</string>
+    <string name="goal_hours">Goal: %1$d hours</string>
+    <string name="percent_complete">%1$d%% complete</string>
+    <string name="getting_started">Getting started...</string>
+    <string name="building_momentum">Building momentum...</string>
+    <string name="in_the_zone">In the zone! 🔥</string>
+    <string name="deep_focus_achieved">Deep focus achieved! 💪</string>
+    <string name="focus_master">Focus master! 🏆</string>
+
+    <!-- Connect Four Game -->
+    <string name="you">YOU</string>
+    <string name="ai">AI</string>
+    <string name="play_again">Play Again</string>
+    <string name="tap_column_drop">↓ Tap a column to drop your piece ↓</string>
+    <string name="exit">Exit</string>
+
+    <!-- Game 2048 -->
+    <string name="score">SCORE</string>
+    <string name="best">BEST</string>
+    <string name="moves">Moves: %1$d</string>
+
+    <!-- Sudoku Game -->
+    <string name="mistakes">Mistakes: </string>
+    <string name="hints">Hints: </string>
+    <string name="game_over">Game Over!</string>
+
+    <!-- Additional Missing Strings -->
+    <string name="back_arrow">←</string>
+    <string name="buddy_code_prefix">Buddy code: </string>
+    <string name="no_limit_set">No limit set</string>
+    <string name="no_data_available">No data available for this app. Add it to your restrictions to start tracking.</string>
+    <string name="no_apps_tracked_yet">No Apps Tracked Yet</string>
+    <string name="add_apps_to_track">Add apps to your restriction list\nto start tracking usage</string>
+    <string name="add_apps_to_track_short">Add apps to track</string>
+    <string name="dash">--</string>
+    <string name="you_win">🎉 You Win!</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="ai_wins">AI Wins</string>
+    <string name="better_luck_next_time">Better luck next time!</string>
+    <string name="draw">Draw!</string>
+    <string name="example_email">user@example.com</string>
+    <string name="percent_symbol">%</string>
+    <string name="slash_100">/100</string>
+    <string name="zero_slash_zero">0/0</string>
+    <string name="percent_used">%.0f%% used</string>
+    <string name="good_progress">Good Progress</string>
+    <string name="needs_attention">Needs Attention</string>
+    <string name="high_usage">High Usage</string>
+    <string name="over_limit_status">Over Limit!</string>
+
+    <!-- Notification Channels -->
+    <string name="time_limit_warnings_channel">Time Limit Warnings</string>
+    <string name="time_limit_warnings_channel_desc">Notifications when approaching time limits</string>
+    <string name="break_reminders_channel">Break Reminders</string>
+    <string name="break_reminders_channel_desc">Reminders to take breaks</string>
+    <string name="app_monitoring_service_channel">App Monitoring Service</string>
+    <string name="app_monitoring_service_channel_desc">Background service notifications</string>
+    <string name="buddy_notifications_channel">Buddy Notifications</string>
+    <string name="escape_active">Escape Active</string>
+    <string name="monitoring_app_usage">Monitoring app usage and enforcing limits</string>
+    <string name="buddy_alert">Buddy Alert</string>
+    <string name="penalty_activated">⚠ Penalty activated! %1$s</string>
+
+    <!-- Blocking Overlay Additional Strings -->
+    <string name="not_enough_kairos">You don\'t have enough Kairos yet.\nEarn Kairos by staying focused and come back for more time ✨</string>
+    <string name="purchased_5_minutes">Purchased 5 more minutes with 1 Kairos.\nMake them count 💡</string>
+
+    <!-- Sudoku Game Additional Strings -->
+    <string name="no_hints_remaining">No hints remaining!</string>
+    <string name="no_empty_cells_hint">No empty cells to hint!</string>
+    <string name="errors_in_solution">There are errors in your solution!</string>
+    <string name="looking_good_fill_remaining">Looking good! Fill in the remaining cells.</string>
+
+    <!-- Connect Four Additional Strings -->
+    <string name="its_a_tie">It\'s a tie!</string>
+
+    <!-- Game 2048 Additional Strings -->
+    <string name="final_score">Final Score: %1$d</string>
+
+    <!-- Sudoku Game Layout Strings -->
+    <string name="game_over_exclamation">Game Over!</string>
+    <string name="too_many_mistakes">Too many mistakes</string>
+    <string name="try_again">Try Again</string>
+    <string name="hint_button">Hint</string>
+
+</resources>

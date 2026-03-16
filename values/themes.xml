@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Escape" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/deep_blue</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@android:color/holo_green_dark</item>
+        <item name="colorOnSecondary">@android:color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/deep_blue</item>
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/deep_blue</item>
+        <item name="colorOnBackground">@android:color/white</item>
+    </style>
+
+    <!-- Blocking activity theme - no action bar, fullscreen -->
+    <style name="Theme.Escape.Blocking" parent="Theme.Material3.DayNight">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorOnPrimary">@android:color/black</item>
+    </style>
+
+    <!-- Custom dialog theme matching main activity design -->
+    <style name="Theme.Escape.Dialog" parent="Theme.Material3.DayNight.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowMinWidthMajor">80%</item>
+        <item name="android:windowMinWidthMinor">80%</item>
+    </style>
+
+    <!-- Alert Dialog theme for buddy system -->
+    <style name="AlertDialogTheme" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="android:background">#1A1A2E</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="colorPrimary">#64B5F6</item>
+        <item name="colorOnSurface">@android:color/white</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/AlertDialogTitleStyle</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/AlertDialogBodyStyle</item>
+    </style>
+
+    <style name="AlertDialogTitleStyle" parent="MaterialAlertDialog.Material3.Title.Text">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="AlertDialogBodyStyle" parent="MaterialAlertDialog.Material3.Body.Text">
+        <item name="android:textColor">#AAAAAA</item>
+    </style>
+
+    <!-- NumberPicker theme for time selection -->
+    <style name="NumberPickerTheme">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:colorControlNormal">#64B5F6</item>
+    </style>
+</resources>

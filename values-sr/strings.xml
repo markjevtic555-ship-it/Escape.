@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Escape</string>
+
+    <!-- Main Activity -->
+    <string name="select_apps_title">Изабери апликације за ограничење</string>
+    <string name="time_limits_title">Постави временске лимите</string>
+    <string name="focus_sessions_title">Сесије фокуса</string>
+    <string name="statistics_title">Статистика</string>
+    <string name="settings_title">Подешавања</string>
+
+    <!-- App Selection -->
+    <string name="no_apps_selected">Нема изабраних апликација</string>
+    <string name="select_all">Изабери све</string>
+    <string name="deselect_all">Поништи све</string>
+    <string name="selected_count">Изабрано %1$d апликација</string>
+    <string name="kairos_balance_label">Каирос: %1$d</string>
+    <string name="set_limit_prompt">Додирни да поставиш лимит</string>
+    <string name="set_limit_title">Постави временски лимит</string>
+    <string name="set_limit_message">Дневни лимит коришћења</string>
+    <string name="set_limit_error">Молимо поставите важећи временски лимит</string>
+    <string name="limit_value">%1$d мин/дан</string>
+    <string name="limit_value_hours">%1$dс %2$dм/дан</string>
+    <string name="search_apps">Претражи апликације...</string>
+    <string name="select_apps_subtitle">Изабери апликације и постави дневне лимите</string>
+    <string name="apps_available">Доступне апликације</string>
+    <string name="restricted_count">%1$d ограничено</string>
+    <string name="hours_label">Сати</string>
+    <string name="minutes_label">Минута</string>
+    <string name="daily_limit">Дневни лимит</string>
+    <string name="remove_limit">Уклони лимит</string>
+    <string name="done">Готово</string>
+
+    <!-- Time Limits -->
+    <string name="minutes_per_day">минута дневно</string>
+    <string name="set_limit">Постави лимит</string>
+    <string name="time_limit_set">Временски лимит за %1$s постављен: %2$d минута</string>
+
+    <!-- Focus Sessions -->
+    <string name="start_focus_session">Покрени сесију фокуса</string>
+    <string name="stop_focus_session">Заустави сесију фокуса</string>
+    <string name="session_active">Сесија фокуса активна</string>
+    <string name="session_inactive">Сесија фокуса неактивна</string>
+
+    <!-- Blocking Screen -->
+    <string name="app_blocked">Апликација блокирана</string>
+    <string name="time_up_message">Ваш временски лимит за ову апликацију је достигнут.</string>
+    <string name="take_break">Одмори се и врати се касније!</string>
+    <string name="time_remaining">Преостало време: %1$s</string>
+
+    <!-- Motivational Quotes -->
+    <string name="quote_1">"Кључ успеха је да усмеримо наш свесни ум на ствари које желимо, а не на ствари којих се плашимо."</string>
+    <string name="quote_2">"Концентриши све своје мисли на посао који имаш пред собом. Сунчеви зраци не спаљују док се не усмере у фокус."</string>
+    <string name="quote_3">"Успешни ратник је просечан човек са ласерским фокусом."</string>
+    <string name="quote_4">"Већина људи нема појма о гигантском капацитету који можемо одмах да употребимо када усмеримо све наше ресурсе на овладавање једном облашћу наших живота."</string>
+
+    <!-- Statistics -->
+    <string name="daily_usage">Дневна употреба</string>
+    <string name="weekly_usage">Недељна употреба</string>
+    <string name="total_time">Укупно време: %1$s</string>
+    <string name="apps_used">Коришћене апликације: %1$d</string>
+    <string name="most_used_app">Најкоришћенија апликација: %1$s</string>
+
+    <!-- Settings -->
+    <string name="enable_breaks">Омогући систем пауза</string>
+    <string name="break_interval">Интервал паузе (минута)</string>
+    <string name="break_duration">Трајање паузе (минута)</string>
+    <string name="reset_daily">Ресетуј дневно у поноћ</string>
+    <string name="notification_warning">Праг упозорења (%)</string>
+
+    <!-- Permissions -->
+    <string name="permission_required">Потребна дозвола</string>
+    <string name="usage_stats_permission_message">Escape-у је потребна дозвола за приступ статистици употребе да би пратио коришћење апликација. Молимо доделите ову дозволу у Подешавања > Безбедност > Приступ статистици употребе.</string>
+    <string name="overlay_permission_message">Escape-у је потребна дозвола за преклапање да би приказивао екране блокирања. Молимо доделите ову дозволу.</string>
+    <string name="notification_permission_message">Escape-у је потребна дозвола за обавештења да би приказивао упозорења о временским лимитима и статус сервиса.</string>
+    <string name="go_to_settings">Иди у подешавања</string>
+
+    <!-- Notifications -->
+    <string name="time_limit_warning">Упозорење о временском лимиту</string>
+    <string name="time_limit_warning_message">Искористили сте %1$d%% вашег дневног лимита за %2$s. Преостало %3$d минута.</string>
+    <string name="break_time">Време за паузу!</string>
+    <string name="break_time_message">Време за %1$d минутну паузу. Зарадио си је!</string>
+
+    <!-- Buttons -->
+    <string name="ok">У реду</string>
+    <string name="cancel">Откажи</string>
+    <string name="save">Сачувај</string>
+    <string name="reset">Ресетуј</string>
+    <string name="exit_app">Изађи из апликације</string>
+    <string name="yes">Да</string>
+    <string name="no">Не</string>
+
+    <!-- End Session Dialog -->
+    <string name="end_session_title">Завршити сесију фокуса?</string>
+    <string name="end_session_message">Да ли сте сигурни да желите да завршите вашу сесију фокуса?</string>
+
+    <!-- Focus Session Notifications / Kairos -->
+    <string name="focus_session_channel_name">Сесија фокуса</string>
+    <string name="focus_session_channel_description">Обавештења за активне сесије фокуса</string>
+    <string name="focus_session_notification_title">Сесија фокуса у току</string>
+    <string name="focus_session_notification_text">Остани фокусиран! Додирни да видиш сесију.</string>
+    <string name="dnd_permission_message">Да бисмо смањили одвлачење пажње, дозволите приступ режиму "Не узнемиравај" како бисмо могли да утишамо обавештења током сесија фокуса.</string>
+    <string name="kairos_earned_message">Одлично! Зарадио си 1 Каирос.</string>
+
+    <!-- Blocking Overlay -->
+    <string name="play_random_game">🎮  Играј игру (+10 мин)</string>
+
+    <!-- Sudoku Game -->
+    <string name="play_sudoku">Играј Судоку (+10 мин)</string>
+    <string name="sudoku_title">Реши да зарадиш 10 мин бонуса!</string>
+    <string name="check_solution">Провери решење</string>
+    <string name="clear">Обриши</string>
+    <string name="sudoku_correct">Судоку решен! Зарадио си 10 минута бонусног времена.</string>
+    <string name="sudoku_incorrect">Решење није тачно. Настави да покушаваш!</string>
+
+    <!-- Wordle Game -->
+    <string name="play_wordle">Играј Вордл (+10 мин)</string>
+    <string name="wordle_title">Погоди реч за 10 мин бонуса!</string>
+    <string name="wordle_correct">Вордл решен! Зарадио си 10 минута бонусног времена.</string>
+    <string name="wordle_game_over">Игра завршена! Реч је била: %1$s</string>
+    <string name="wordle_not_enough_letters">Недовољно слова</string>
+    <string name="wordle_invalid_word">Није у листи речи</string>
+    <string name="wordle_enter">УНЕСИ</string>
+
+    <!-- Connect Four Game -->
+    <string name="play_connect_four">4 у низу (+10 мин)</string>
+    <string name="connect_four_title">4 у низу</string>
+    <string name="connect_four_subtitle">Повежи 4 да зарадиш 10 мин бонуса!</string>
+    <string name="connect_four_your_turn">Твој ред</string>
+    <string name="connect_four_computer_turn">Рачунар размишља…</string>
+    <string name="connect_four_you_win">Победио си!</string>
+    <string name="connect_four_computer_wins">Рачунар побеђује!</string>
+    <string name="connect_four_draw">Нерешено!</string>
+    <string name="connect_four_column_full">Колона је пуна!</string>
+    <string name="connect_four_new_game">Нова игра</string>
+    <string name="connect_four_you">Ти</string>
+    <string name="connect_four_computer">Рачунар</string>
+    <string name="connect_four_bonus_awarded">Победио си! Зарадио 10 минута бонусног времена.</string>
+
+    <!-- Merge it! Game (formerly 2048) -->
+    <string name="play_2048">Споји! (+10 мин)</string>
+    <string name="game_2048_title">Споји!</string>
+    <string name="game_2048_subtitle">Достигни 256 да зарадиш 10 мин бонуса!</string>
+    <string name="game_2048_score">Резултат: %1$d</string>
+    <string name="game_2048_win">Победио си!</string>
+    <string name="game_2048_game_over">Игра завршена</string>
+    <string name="game_2048_new_game">Нова игра</string>
+    <string name="game_2048_instructions">Превуци да помераш плочице. Спајај исте вредности!</string>
+    <string name="game_2048_bonus_awarded">Достигао си 256! Зарадио 10 минута бонусног времена.</string>
+
+    <!-- Main Activity Additional Strings -->
+    <string name="tagline">Овладај својим дигиталним временом</string>
+    <string name="service_active">Сервис: Активан</string>
+    <string name="service_inactive">Сервис: Неактиван</string>
+    <string name="monitoring_apps">Прати апликације</string>
+    <string name="tap_to_enable">Додирни да омогућиш</string>
+    <string name="apps_tracked">Праћене апликације</string>
+    <string name="todays_usage">Данашња употреба</string>
+    <string name="select_apps_description">Изабери апликације за праћење и постави лимите</string>
+    <string name="focus_session_description">Режим дубоког рада са блокирањем апликација</string>
+    <string name="statistics_description">Погледај детаљну аналитику употребе</string>
+    <string name="buddy_system">Систем пријатеља</string>
+    <string name="buddy_system_description">Повежи се са пријатељем за одговорност</string>
+    <string name="connected">Повезано</string>
+    <string name="quote_default">Кључ није да приоритизујеш оно што је на твом распореду, већ да распоредиш своје приоритете.</string>
+    <string name="quote_author_default">Стивен Кови</string>
+    <string name="app_version">в1.0</string>
+    <string name="monitoring_started">Escape праћење покренуто</string>
+    <string name="monitoring_stopped">Escape праћење заустављено</string>
+    <string name="usage_stats_permission_required">Потребна дозвола за статистику употребе</string>
+    <string name="overlay_permission_required">Потребна дозвола за преклапање</string>
+    <string name="notification_permission_required">Потребна дозвола за обавештења за праћење апликације</string>
+    <string name="error_initializing_app">Грешка при покретању апликације: %1$s</string>
+    <string name="error_checking_permissions">Грешка при провери дозвола: %1$s</string>
+    <string name="error_starting_service">Грешка при покретању сервиса</string>
+    <string name="error_updating_ui">Грешка при ажурирању интерфејса</string>
+
+    <!-- Quotes Array -->
+    <string name="quote_0_text">Кључ није да приоритизујеш оно што је на твом распореду, већ да распоредиш своје приоритете.</string>
+    <string name="quote_0_author">Стивен Кови</string>
+    <string name="quote_1_text">Скоро све ће поново радити ако га искључиш на неколико минута, укључујући и тебе.</string>
+    <string name="quote_1_author">Ен Ламот</string>
+    <string name="quote_2_text">Технологија је корисна слуга али опасан господар.</string>
+    <string name="quote_2_author">Кристијан Лоус Ланге</string>
+    <string name="quote_3_text">Способност поједностављења значи елиминисање непотребног како би неопходно могло да говори.</string>
+    <string name="quote_3_author">Ханс Хофман</string>
+    <string name="quote_4_text">Искључи се да би се поново повезао.</string>
+    <string name="quote_4_author">Непознато</string>
+    <string name="quote_5_text">Твој фокус одређује твоју стварност.</string>
+    <string name="quote_5_author">Џорџ Лукас</string>
+    <string name="quote_6_text">Време је оно што желимо највише, али оно што најгоре користимо.</string>
+    <string name="quote_6_author">Вилијам Пен</string>
+    <string name="quote_7_text">Највеће оружје против стреса је наша способност да изаберемо једну мисао уместо друге.</string>
+    <string name="quote_7_author">Вилијам Џејмс</string>
+
+    <!-- Settings -->
+    <string name="break_system_settings">Подешавања система пауза</string>
+    <string name="minutes">минута</string>
+    <string name="warning_at_percent">Упозорење на %1$d%% временског лимита</string>
+    <string name="log_out">Одјави се</string>
+    <string name="values_must_be_greater_than_zero">Вредности морају бити веће од 0</string>
+    <string name="settings_saved">Подешавања сачувана</string>
+    <string name="please_enter_valid_numbers">Молимо унесите важеће бројеве</string>
+    <string name="language_settings">Језик</string>
+    <string name="select_language">Изабери језик</string>
+    <string name="language_english">English</string>
+    <string name="language_serbian">Српски</string>
+    <string name="language_serbian_latin">Српски (Latinica)</string>
+
+    <!-- Account Activity -->
+    <string name="account_title">Налог</string>
+    <string name="user">Корисник</string>
+    <string name="email">Е-пошта</string>
+    <string name="no_email">Нема е-поште</string>
+    <string name="buddy_code_label">Код пријатеља: %1$s</string>
+
+    <!-- Blocking Activity -->
+    <string name="buddy_system_penalty">Казна система пријатеља</string>
+    <string name="until_daily_reset">До дневног ресетовања</string>
+    <string name="purchase_5_minutes">⧖  Купи још 5 минута (1 Каирос)</string>
+
+    <!-- Buddy Activity -->
+    <string name="not_connected">Није повезано</string>
+    <string name="your_buddy_code">ТВОЈ КОД ПРИЈАТЕЉА</string>
+    <string name="loading">УЧИТАВАЊЕ...</string>
+    <string name="error">ГРЕШКА</string>
+    <string name="copy">Копирај</string>
+    <string name="share_code_message">Подели овај код са пријатељем да се повежете</string>
+    <string name="connect_to_buddy">ПОВЕЗИ СЕ СА ПРИЈАТЕЉЕМ</string>
+    <string name="connect_to_buddy_button">Повежи се са пријатељем</string>
+    <string name="your_buddy">Твој пријатељ</string>
+    <string name="live">УЖИВО</string>
+    <string name="currently_using">ТРЕНУТНО КОРИСТИ</string>
+    <string name="no_app_in_use">Нема апликације у употреби</string>
+    <string name="in_this_session">у овој сесији</string>
+    <string name="restricted_apps">ЗАБРАЊЕНЕ АПЛИКАЦИЈЕ</string>
+    <string name="penalty_active">Казна активна</string>
+    <string name="buddy_exceeded_limit">Твој пријатељ је прекорачио дневни лимит</string>
+    <string name="buddy_exceeded_one_limit">Твој пријатељ је прекорачио један од својих лимита апликација!</string>
+    <string name="buddy_penalty_locked_app">Твој пријатељ је прекорачио лимите, па је Escape закључао апликацију %1$s за тебе.</string>
+    <string name="disconnect_buddy">Прекини везу са пријатељем</string>
+    <string name="disconnect_buddy_message">Да ли сте сигурни да желите да прекинете везу са вашим пријатељем? Обојица ћете изгубити везу.</string>
+    <string name="disconnect">Прекини</string>
+    <string name="disconnected_from_buddy">Прекинута веза са пријатељем</string>
+    <string name="how_it_works">💡 Како ради</string>
+    <string name="how_it_works_description">• Подели свој код са пријатељем\n• Види коју апликацију твој пријатељ користи у реалном времену\n• Ако твој пријатељ прекорачи било који од својих лимита апликација, обојица добијате ограничења\n• Добиј обавештење када твој пријатељ користи апликацију преко 1 сата\n• Остани одговоран заједно!</string>
+    <string name="no_restricted_apps">Још нема забрањених апликација за приказ</string>
+
+    <!-- Statistics Activity -->
+    <string name="todays_overview">Данашњи преглед</string>
+    <string name="digital_wellbeing">ДИГИТАЛНО БЛАГОСТАЊЕ</string>
+    <string name="excellent_control">Одлична контрола</string>
+    <string name="time_saved">Сачувано време</string>
+    <string name="screen_time">📱 Време на екрану</string>
+    <string name="over_limit">🚫 Преко лимита</string>
+    <string name="app_breakdown">Разбијање по апликацијама</string>
+    <string name="tap_for_details">Додирни за детаље</string>
+    <string name="daily_summary">📊 Дневни преглед</string>
+    <string name="total_usage">Укупна употреба</string>
+    <string name="apps_used_today">Апликације коришћене данас</string>
+    <string name="date">Датум</string>
+    <string name="statistics_update_realtime">Статистика се ажурира у реалном времену</string>
+
+    <!-- App Detail Activity -->
+    <string name="app_details">Детаљи апликације</string>
+    <string name="app_name_label">Име апликације</string>
+    <string name="todays_usage_label">ДАНАШЊА УПОТРЕБА</string>
+    <string name="min_limit">/ лимит од %1$d мин</string>
+    <string name="delete_limit">Обриши лимит</string>
+    <string name="opens_today">📱 Отварања данас</string>
+    <string name="times_opened">пута отворено</string>
+    <string name="avg_session">⏱️ Просечна сесија</string>
+    <string name="per_session">по сесији</string>
+    <string name="limits_exceeded">🚫 Лимити прекорачени</string>
+    <string name="this_week">ове недеље</string>
+    <string name="longest_session">🏆 Најдужа сесија</string>
+    <string name="today">данас</string>
+    <string name="within_limit">🔥 У оквиру лимита</string>
+    <string name="days">дана</string>
+    <string name="streak">низ</string>
+    <string name="peak_hour">⚡ Вршни сат</string>
+    <string name="most_active">најактивније</string>
+    <string name="hourly_usage">🕐 Сатна употреба</string>
+    <string name="usage_throughout_day">Употреба током дана (24 сата)</string>
+    <string name="weekly_trend">📈 Недељни тренд</string>
+    <string name="personalized_insight">💡 Персонализован увид</string>
+    <string name="based_on_usage_patterns">На основу твојих образаца употребе...</string>
+
+    <!-- Login Activity -->
+    <string name="welcome_back">Добро дошли назад</string>
+    <string name="sign_in_continue">Пријави се да наставиш своје путовање</string>
+    <string name="email_label">Е-ПОШТА</string>
+    <string name="password_label">ЛОЗИНКА</string>
+    <string name="sign_in">Пријави се</string>
+    <string name="dont_have_account">Немаш налог? </string>
+    <string name="sign_up">Региструј се</string>
+    <string name="continue_without_account">Настави без налога</string>
+
+    <!-- Signup Activity -->
+    <string name="create_account">Креирај налог</string>
+    <string name="join_community">Придружи се Escape заједници</string>
+    <string name="confirm_password_label">ПОТВРДИ ЛОЗИНКУ</string>
+    <string name="create_account_button">Креирај налог</string>
+    <string name="already_have_account">Већ имаш налог? </string>
+
+    <!-- Focus Session Activity -->
+    <string name="focus_mode">Режим фокуса</string>
+    <string name="earn_kairos_focused">Заради Каирос остајући фокусиран</string>
+    <string name="sessions">Сесије</string>
+    <string name="total_focus">Укупан фокус</string>
+    <string name="day_streak">Дневни низ</string>
+    <string name="start">ПОКРЕНИ</string>
+    <string name="stay_focused">Остани фокусиран...</string>
+    <string name="tap_to_begin">Додирни да почнеш своју сесију фокуса</string>
+    <string name="todays_focus">Данашњи фокус</string>
+    <string name="goal_hours">Циљ: %1$d сати</string>
+    <string name="percent_complete">%1$d%% завршено</string>
+    <string name="getting_started">Почињеш...</string>
+    <string name="building_momentum">Градиш замах...</string>
+    <string name="in_the_zone">У зони! 🔥</string>
+    <string name="deep_focus_achieved">Достигнут дубоки фокус! 💪</string>
+    <string name="focus_master">Мајстор фокуса! 🏆</string>
+
+    <!-- Connect Four Game -->
+    <string name="you">ТИ</string>
+    <string name="ai">ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА</string>
+    <string name="play_again">Играј поново</string>
+    <string name="tap_column_drop">↓ Додирни колону да спустиш свој комад ↓</string>
+    <string name="exit">Изађи</string>
+
+    <!-- Game 2048 -->
+    <string name="score">РЕЗУЛТАТ</string>
+    <string name="best">НАЈБОЉЕ</string>
+    <string name="moves">Потези: %1$d</string>
+
+    <!-- Sudoku Game -->
+    <string name="mistakes">Грешке: </string>
+    <string name="hints">Савети: </string>
+    <string name="game_over">Игра завршена!</string>
+
+    <!-- Additional Missing Strings -->
+    <string name="back_arrow">←</string>
+    <string name="buddy_code_prefix">Код пријатеља: </string>
+    <string name="no_limit_set">Нема постављеног лимита</string>
+    <string name="no_data_available">Нема доступних података за ову апликацију. Додај је у своја ограничења да почнеш праћење.</string>
+    <string name="no_apps_tracked_yet">Још нема праћених апликација</string>
+    <string name="add_apps_to_track">Додај апликације у своју листу ограничења\nда почнеш праћење употребе</string>
+    <string name="add_apps_to_track_short">Додај апликације за праћење</string>
+    <string name="dash">--</string>
+    <string name="you_win">🎉 Победио си!</string>
+    <string name="congratulations">Честитам!</string>
+    <string name="ai_wins">ВИ побеђује</string>
+    <string name="better_luck_next_time">Срећно следећи пут!</string>
+    <string name="draw">Нерешено!</string>
+    <string name="example_email">user@example.com</string>
+    <string name="percent_symbol">%</string>
+    <string name="slash_100">/100</string>
+    <string name="zero_slash_zero">0/0</string>
+    <string name="percent_used">%.0f%% искоришћено</string>
+    <string name="good_progress">Добар напредак</string>
+    <string name="needs_attention">Потребна пажња</string>
+    <string name="high_usage">Висока употреба</string>
+    <string name="over_limit_status">Преко лимита!</string>
+
+    <!-- Notification Channels -->
+    <string name="time_limit_warnings_channel">Упозорења о временским лимитима</string>
+    <string name="time_limit_warnings_channel_desc">Обавештења када се приближаваш временским лимитима</string>
+    <string name="break_reminders_channel">Подсетници за паузу</string>
+    <string name="break_reminders_channel_desc">Подсетници да направиш паузу</string>
+    <string name="app_monitoring_service_channel">Сервис праћења апликација</string>
+    <string name="app_monitoring_service_channel_desc">Обавештења позадинског сервиса</string>
+    <string name="buddy_notifications_channel">Обавештења пријатеља</string>
+    <string name="escape_active">Escape активан</string>
+    <string name="monitoring_app_usage">Прати употребу апликација и спроводи лимите</string>
+    <string name="buddy_alert">Упозорење пријатеља</string>
+    <string name="penalty_activated">⚠ Казна активирана! %1$s</string>
+
+    <!-- Blocking Overlay Additional Strings -->
+    <string name="not_enough_kairos">Још немаш довољно Каироса.\nЗаради Каирос остајући фокусиран и врати се за више времена ✨</string>
+    <string name="purchased_5_minutes">Купио си још 5 минута за 1 Каирос.\nИскористи их паметно 💡</string>
+
+    <!-- Sudoku Game Additional Strings -->
+    <string name="no_hints_remaining">Нема више савета!</string>
+    <string name="no_empty_cells_hint">Нема празних поља за савет!</string>
+    <string name="errors_in_solution">У твом решењу има грешака!</string>
+    <string name="looking_good_fill_remaining">Изгледа добро! Попуни преостала поља.</string>
+
+    <!-- Connect Four Additional Strings -->
+    <string name="its_a_tie">Нерешено је!</string>
+
+    <!-- Game 2048 Additional Strings -->
+    <string name="final_score">Коначан резултат: %1$d</string>
+
+    <!-- Sudoku Game Layout Strings -->
+    <string name="game_over_exclamation">Игра завршена!</string>
+    <string name="too_many_mistakes">Превише грешака</string>
+    <string name="try_again">Покушај поново</string>
+    <string name="hint_button">Савет</string>
+
+</resources>
+

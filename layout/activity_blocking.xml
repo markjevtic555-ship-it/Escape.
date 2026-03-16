@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <!-- Subtle gradient overlay -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blocking_gradient_overlay" />
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Buddy penalty banner (shown only when block is due to buddy system) -->
+        <TextView
+            android:id="@+id/buddyPenaltyBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="6dp"
+            android:text="@string/buddy_system_penalty"
+            android:textColor="#FFECB3"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:letterSpacing="0.12"
+            android:background="@drawable/buddy_penalty_banner_background"
+            android:visibility="gone" />
+
+        <!-- Top Section: Blocked Icon & App Name -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="48dp">
+
+            <!-- Blocked Icon Circle -->
+            <FrameLayout
+                android:id="@+id/blockedIconContainer"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/blocked_icon_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="⏸"
+                    android:textSize="48sp" />
+
+            </FrameLayout>
+
+            <!-- App Name -->
+            <TextView
+                android:id="@+id/appNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/app_blocked"
+                android:textColor="@android:color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium" />
+
+            <!-- Time Up Message -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/time_up_message"
+                android:textColor="#888888"
+                android:textSize="14sp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <!-- Spacer -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- Quote Section -->
+        <LinearLayout
+            android:id="@+id/quoteContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/quote_background"
+            android:padding="20dp"
+            android:layout_marginHorizontal="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💭"
+                android:textSize="24sp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/quoteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#CCCCCC"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:lineSpacingExtra="6dp"
+                android:fontFamily="serif" />
+
+        </LinearLayout>
+
+        <!-- Spacer -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- Time Remaining Card -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/time_remaining_background"
+            android:paddingHorizontal="32dp"
+            android:paddingVertical="16dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/until_daily_reset"
+                android:textColor="#666666"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                android:letterSpacing="0.1" />
+
+            <TextView
+                android:id="@+id/timeRemainingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium" />
+
+        </LinearLayout>
+
+        <!-- Play Game Button (Random Game) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/playGameButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/play_random_game"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            app:backgroundTint="#1E88E5"
+            app:cornerRadius="16dp"
+            app:rippleColor="#64B5F6" />
+
+        <!-- Kairos Purchase Button (uses Kairos badge theme) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/kairosPurchaseButton"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/purchase_5_minutes"
+            android:textColor="#FFD93D"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:background="@drawable/kairos_badge_stats"
+            app:backgroundTint="@android:color/transparent"
+            app:cornerRadius="16dp"
+            app:strokeColor="#FFD93D"
+            app:strokeWidth="1dp"
+            app:rippleColor="#40FFD93D" />
+
+        <!-- Close Button (Initially Hidden) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/closeButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/ok"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            app:backgroundTint="#2E7D32"
+            app:cornerRadius="12dp"
+            android:visibility="gone" />
+
+        <!-- Exit Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/exitButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/exit_app"
+            android:textColor="#888888"
+            android:textAllCaps="false"
+            app:backgroundTint="@android:color/transparent"
+            app:strokeColor="#444444"
+            app:strokeWidth="1dp"
+            app:cornerRadius="12dp"
+            app:rippleColor="#333333" />
+
+    </LinearLayout>
+
+</FrameLayout>

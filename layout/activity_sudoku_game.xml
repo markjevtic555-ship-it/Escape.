@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/deep_blue"
+    android:padding="12dp">
+
+    <!-- Header with Title and Mistakes Counter -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/sudoku_title"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Mistakes Counter -->
+        <LinearLayout
+            android:id="@+id/mistakesContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mistakes"
+                android:textColor="#AAAAAA"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/mistakesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0/3"
+                android:textColor="#FF6B6B"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hints"
+                android:textColor="#AAAAAA"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/hintsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textColor="#4FC3F7"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- Sudoku Grid Container -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center">
+
+        <GridLayout
+            android:id="@+id/sudokuGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:columnCount="9"
+            android:rowCount="9"
+            android:background="@drawable/sudoku_grid_background"
+            android:padding="6dp" />
+
+        <!-- Game Over Overlay -->
+        <LinearLayout
+            android:id="@+id/gameOverOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#DD14106E"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/gameOverText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_over_exclamation"
+                android:textColor="#FF6B6B"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/too_many_mistakes"
+                android:textColor="#AAAAAA"
+                android:textSize="16sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTryAgain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/try_again"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                app:backgroundTint="#2E7D32"
+                app:cornerRadius="16dp"
+                android:paddingHorizontal="32dp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!-- Number Input Buttons - Two Rows -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp">
+
+        <!-- Row 1: 1-5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="6dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn1"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="3dp"
+                android:text="1"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:backgroundTint="#1E3A5F"
+                app:cornerRadius="10dp"
+                app:strokeColor="#3D5A80"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn2"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="3dp"
+                android:text="2"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:backgroundTint="#1E3A5F"
+                app:cornerRadius="10dp"
+                app:strokeColor="#3D5A80"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn3"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="3dp"
+                android:text="3"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:backgroundTint="#1E3A5F"
+                app:cornerRadius="10dp"
+                app:strokeColor="#3D5A80"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn4"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="3dp"
+                android:text="4"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:backgroundTint="#1E3A5F"
+                app:cornerRadius="10dp"
+                app:strokeColor="#3D5A80"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn5"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="3dp"
+                android:text="5"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:backgroundTint="#1E3A5F"
+                app:cornerRadius="10dp"
+                app:strokeColor="#3D5A80"
+                app:strokeWidth="1dp" />
+
+        </LinearLayout>
+
+        <!-- Row 2: 6-9 + Erase -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn6"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="3dp"
+                android:text="6"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:backgroundTint="#1E3A5F"
+                app:cornerRadius="10dp"
+                app:strokeColor="#3D5A80"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn7"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="3dp"
+                android:text="7"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:backgroundTint="#1E3A5F"
+                app:cornerRadius="10dp"
+                app:strokeColor="#3D5A80"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn8"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="3dp"
+                android:text="8"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:backgroundTint="#1E3A5F"
+                app:cornerRadius="10dp"
+                app:strokeColor="#3D5A80"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn9"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="3dp"
+                android:text="9"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:backgroundTint="#1E3A5F"
+                app:cornerRadius="10dp"
+                app:strokeColor="#3D5A80"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnErase"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="3dp"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                app:backgroundTint="#4A4A6A"
+                app:cornerRadius="10dp"
+                app:strokeColor="#6A6A8A"
+                app:strokeWidth="1dp"
+                app:icon="@android:drawable/ic_menu_delete"
+                app:iconTint="@android:color/white"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Action Buttons Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnHint"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:text="@string/hint_button"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            app:backgroundTint="#0277BD"
+            app:cornerRadius="12dp"
+            app:strokeColor="#4FC3F7"
+            app:strokeWidth="1dp"
+            app:icon="@android:drawable/ic_menu_help"
+            app:iconTint="@android:color/white"
+            app:iconGravity="textStart" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCheck"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1.2"
+            android:layout_marginHorizontal="4dp"
+            android:text="@string/check_solution"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            app:backgroundTint="#2E7D32"
+            app:cornerRadius="12dp"
+            app:strokeColor="#4CAF50"
+            app:strokeWidth="1dp"
+            app:icon="@android:drawable/ic_menu_send"
+            app:iconTint="@android:color/white"
+            app:iconGravity="textStart" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:text="@string/exit"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            app:backgroundTint="@color/deep_blue"
+            app:cornerRadius="12dp"
+            app:strokeColor="@android:color/white"
+            app:strokeWidth="1dp"
+            app:icon="@android:drawable/ic_menu_close_clear_cancel"
+            app:iconTint="@android:color/white"
+            app:iconGravity="textStart" />
+
+    </LinearLayout>
+
+</LinearLayout>
